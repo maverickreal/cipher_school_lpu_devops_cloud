@@ -1,10 +1,10 @@
 pipeline {
     agent {
-        label: "test-docker-agent"
+        label "test-docker-agent"
     }
     
     triggers {
-        pollScm("H/2 * * * *")
+        pollSCM("H/2 * * * *")
     }
     
     environment {
