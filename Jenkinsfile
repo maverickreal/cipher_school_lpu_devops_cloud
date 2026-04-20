@@ -14,7 +14,6 @@ pipeline {
     stages {
         stage("pre") {
             steps {
-                git branch: "main", url: "https://github.com/maverickreal/cipher_school_lpu_devops_cloud.git"
                 echo "Pull done."
             }
         }
