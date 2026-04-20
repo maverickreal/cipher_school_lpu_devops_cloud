@@ -20,11 +20,11 @@ pipeline {
         }
         
         stage("build") {
-            steps {
-                when {
-                    branch "main"
-                }
-                
+            when {
+                branch "main"
+            }
+
+            steps {                
                 sh '''
                 sh print.sh
                 echo "Build done."
