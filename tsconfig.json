@@ -3,11 +3,12 @@
     "target": "ES2022",
     "module": "commonjs",
     "moduleResolution": "node",
+    "rootDir": "./src",
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "verbatimModuleSyntax": false,        // ← THIS IS THE FIX
+    "verbatimModuleSyntax": false,
     "forceConsistentCasingInFileNames": true
   },
   "include": ["src/**/*"],
